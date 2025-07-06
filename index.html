@@ -2,14 +2,19 @@
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>حكايات - منصة القصص</title>
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- أيقونات -->
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+
+    <!-- خطوط Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <!-- أنماط مخصصة -->
     <style>
       body {
         font-family: 'Cairo', sans-serif;
@@ -22,25 +27,13 @@
         to { opacity: 1; transform: translateY(0); }
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.3",
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.8.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.525.0",
-    "react-dom": "https://esm.sh/react-dom@^19.1.0",
-    "framer-motion": "https://esm.sh/framer-motion@^11.0.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+  </head>
+
   <body class="bg-gray-900 text-white">
     <div id="root"></div>
     <div id="toast-root"></div>
-    <script type="module" src="/index.tsx"></script>
+
+    <!-- Vite سيدمج السكريبت و CSS تلقائيًا أثناء البناء -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
